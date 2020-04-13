@@ -63,7 +63,7 @@ void format()
   else
   //IF IT IS NOT FOUND JUST PRINT A MESSAGE
   {
-    Serial.println("LOCATION NOT FOUND");
+    Serial.println("N/A");
   }
 
 
@@ -85,7 +85,7 @@ void format()
   else
   //IF IT IS NOT FOUND JUST PRINT A MESSAGE
   {
-    Serial.println("DATE NOT FOUND");
+    Serial.println("N/A");
   }
  
 
@@ -109,7 +109,7 @@ void format()
   //IF IT IS NOT FOUND JUST PRINT A MESSAGE
   else
   {
-    Serial.println("TIME NOT FOUND");
+    Serial.println("N/A");
   }*/
 
   Serial.println();
