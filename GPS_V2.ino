@@ -38,6 +38,7 @@ void loop()
   while (SoftSer.available() > 0)
   //Read the information... THEN GO TO THE FORMATTING LOOP TO PROCESS THE INFORMATION INTO DATA
     if (gps.encode(SoftSer.read()))
+      //FIND THIS FORMAT LOOP BELOW
       format();
 
   // If 5000 milliseconds pass and there are no characters coming in
