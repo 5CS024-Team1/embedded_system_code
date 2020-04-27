@@ -8,6 +8,9 @@
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
 
+//TEST
+import processing.serial.*;
+
 //Establishing the SoftwareSerial pins
 int RX = 3;
 int TX = 4;
@@ -28,6 +31,9 @@ void setup()
 
   // Start up the software serial port
   SoftSer.begin(BR);
+  
+  //THIS IS A TEST, I FOUND SOMEONE USING THIS ONLINE AND THOUGHT I WOULD ADD IT IN INCASE I CAN USE IT-
+  output = createWriter ("GPSDATA.csv");
 }
 
 //*****************************************************************************************************************************************
@@ -67,12 +73,6 @@ void format()
     Serial.println("N/A");
   }
 
-
-//CURRENTLY FINDING OUT FROM LUCY IF THESE ARE NEEDED
-
-/*
- * //MAY USE THIS TO FIND THE DATA DEPENDING ON WHAT IS REQUIRED BY THE DATABASE
- //FORMATTING THE DATE THAT THE LOCATION WAS FOUND
   Serial.print("Date: ");
   //IF A DATE IS FOUND FORMAT IT SO THE DAY, MONTH AND YEAR ARE SEPERATED BY A /
   if (gps.date.isValid())
