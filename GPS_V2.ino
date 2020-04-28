@@ -8,9 +8,6 @@
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
 
-//TEST
-import processing.serial.*;
-
 //Establishing the SoftwareSerial pins
 int RX = 3;
 int TX = 4;
@@ -31,9 +28,6 @@ void setup()
 
   // Start up the software serial port
   SoftSer.begin(BR);
-  
-  //THIS IS A TEST, I FOUND SOMEONE USING THIS ONLINE AND THOUGHT I WOULD ADD IT IN INCASE I CAN USE IT-
-  output = createWriter ("GPSDATA.csv");
 }
 
 //*****************************************************************************************************************************************
