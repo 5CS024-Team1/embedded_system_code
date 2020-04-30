@@ -18,7 +18,7 @@ int BR = 9600;
 //Creating the GPS object
 TinyGPSPlus gps;
 
-//Creating the software serial object
+//Declaring the software serial object
 SoftwareSerial SoftSer(RX, TX);
 
 void setup()
